@@ -1,13 +1,89 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mysav-enterprise</title>
+    <title>MYSAV Enterprise | Soluciones Tecnológicas y Soporte Especializado</title>
+
+    <!-- Fuentes: Inter + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <!-- Efecto ambiental de fondo -->
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <navbar-component></navbar-component>
+
+  <main class="container page-content">
+    <!-- Contenido de la página -->
+  
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <span class="badge">Innovación & Infraestructura</span>
+        <h1>Soluciones tecnológicas de alto rendimiento para tu empresa</h1>
+        <p>Especialistas en desarrollo de software a medida, integración de sistemas y soporte técnico corporativo integral.</p>
+        
+        <div class="hero-actions">
+          <a href="/contacto.html" class="btn-primary">Solicitar Diagnóstico</a>
+          <a href="/servicios.html" class="btn-secondary">Explorar Servicios</a>
+        </div>
+      </section>
+
+      <!-- SERVICIOS DESTACADOS -->
+      <section class="services-overview">
+        <div class="section-title">
+          <h2>Nuestros Servicios Core</h2>
+          <p>Impulsamos la eficiencia operativa de tu infraestructura informática</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Tarjeta 1: Soporte Técnico -->
+          <article class="card service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Soporte Técnico Corporativo</h3>
+            <p>Mantenimiento preventivo y correctivo de hardware, servidores y dispositivos corporativos con atención oportuna.</p>
+            <a href="/contacto.html" class="service-link">Solicitar Soporte &rarr;</a>
+          </article>
+
+          <!-- Tarjeta 2: Desarrollo de Software -->
+          <article class="card service-card">
+            <div class="service-icon">💻</div>
+            <h3>Desarrollo de Software</h3>
+            <p>Construcción de aplicaciones web empresariales, integración de APIs y arquitecturas eficientes a la medida.</p>
+            <a href="/contacto.html" class="service-link">Iniciar Proyecto &rarr;</a>
+          </article>
+
+          <!-- Tarjeta 3: Consultoría IT -->
+          <article class="card service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Consultoría e Integración</h3>
+            <p>Optimización de procesos operativos, persistencia de datos y centralización de métricas de desempeño.</p>
+            <a href="/contacto.html" class="service-link">Consultar &rarr;</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="/contacto.html">Soporte</a>
+          <a href="/servicios.html">Servicios</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/home.js"></script>
   </body>
 </html>
