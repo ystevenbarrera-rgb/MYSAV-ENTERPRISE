@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros | MYSAV Enterprise</title>
+
+    <!-- Fuentes: Inter + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Efecto ambiental de fondo -->
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navbar Centralizado -->
+    <navbar-component></navbar-component>
+
+    <main class="container page-content">
+      <!-- HERO SECCIÓN NOSOTROS -->
+      <section class="about-hero">
+        <span class="badge">Nuestra Identidad</span>
+        <h1>Innovación impulsada por pasión y visión compartida</h1>
+        <p>MYSAV Enterprise nace como una iniciativa emprendedora orientada a transformar desafíos informáticos en soluciones eficientes, escalables y de alto impacto técnico.</p>
+      </section>
+
+      <!-- SECCIÓN DEL EQUIPO FUNDADOR -->
+      <section class="team-section">
+        <div class="section-title">
+          <h2>Equipo Fundador</h2>
+          <p>Los 4 creadores detrás de la visión y arquitectura de MYSAV Enterprise</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Integrante 1 -->
+          <article class="card team-card">
+            <div class="team-avatar">
+              <span class="avatar-placeholder">EM</span>
+            </div>
+            <div class="team-info">
+              <h3>Esteban Alejandro Mora Avila</h3>
+              <span class="team-role">Ingeniero de base de datos & Frontend</span>
+              <p>Encargado de la gestión, diseño, mantenimiento y optimización de las bases de datos, garantizando la seguridad, integridad y disponibilidad de la información.
+</p>
+              <div class="skills-tags">
+                <span class="tag">MongoDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">React/Angular</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Integrante 2 -->
+          <article class="card team-card">
+            <div class="team-avatar">
+              <span class="avatar-placeholder">SB</span>
+            </div>
+            <div class="team-info">
+              <h3>Yuben Steven Barrera Arias</h3>
+              <span class="team-role">Ingeniero de experiencia de usuario & Frontend  </span>
+              <p>Enfocado en la construcción de interfaces dinámicas, diseño accesible, rendimiento web y experiencias de usuario fluidas.</p>
+              <div class="skills-tags">
+                <span class="tag">React / Vite</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">CSS Grid / UI</span>
+                <span class="tag">Angular</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Integrante 3 -->
+          <article class="card team-card">
+            <div class="team-avatar">
+              <span class="avatar-placeholder">FS</span>
+            </div>
+            <div class="team-info">
+              <h3>Fernando Javier Sepulveda Puello </h3>
+              <span class="team-role">Lider de Infraestructura y Operaciones de TI</span>
+              <p>Encargado de la estabilidad, diagnóstico de hardware corporativo, redes y aseguramiento de nivel de servicio para clientes.</p>
+              <div class="skills-tags">
+                <span class="tag">Soporte IT</span>
+                <span class="tag">Redes</span>
+                <span class="tag">Mantenimiento</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Integrante 4 -->
+          <article class="card team-card">
+            <div class="team-avatar">
+              <span class="avatar-placeholder">JA</span>
+            </div>
+            <div class="team-info">
+              <h3>Johan Santiago Agudelo Moncada</h3>
+              <span class="team-role">Arquitecto backend y líder de sistemas</span>
+              <p>Especialista en desarrollo de APIs, arquitectura de persistencia de datos, optimización de métricas e integración de sistemas cloud.</p>
+              <div class="skills-tags">
+                <span class="tag">Python / FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PILARES CORPORATIVOS -->
+      <section class="values-section">
+        <div class="section-title">
+          <h2>Nuestros Pilares</h2>
+          <p>Valores que guían el desarrollo de cada proyecto que asumimos</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon">🚀</div>
+            <h4>Innovación Constante</h4>
+            <p>Adoptamos tecnologías modernas para entregar código limpio, eficiente y mantenible a largo plazo.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🛡️</div>
+            <h4>Compromiso & Calidad</h4>
+            <p>Aseguramos la rigurosidad en las entregas y la confiabilidad en el soporte técnico brindado.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon">🤝</div>
+            <h4>Trabajo Colaborativo</h4>
+            <p>La combinación de nuestras 4 áreas de fortaleza garantiza soluciones integrales de extremo a extremo.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="/contacto.html">Soporte</a>
+          <a href="/servicios.html">Servicios</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/about.js"></script>
+  </body>
+</html>
