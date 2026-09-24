@@ -23,4 +23,10 @@ class NavbarComponent extends HTMLElement {
   }
 }
 
+if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  
+
+
 customElements.define('navbar-component', NavbarComponent);

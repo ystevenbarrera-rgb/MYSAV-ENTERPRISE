@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
+});
+
 import './components/Navbar.js';
 import './style.css';
 
