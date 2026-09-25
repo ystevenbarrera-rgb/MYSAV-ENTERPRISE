@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | MYSAV Enterprise</title>
+
+    <!-- Fuentes: Inter + Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Efecto ambiental de fondo -->
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navbar Centralizado -->
+    <navbar-component></navbar-component>
+
+    <!-- HERO SECCIÓN SERVICIOS -->
+    <main class="page-content">
+      <section class="about-hero">
+        <span class="badge">Nuestras Capacidades Core</span>
+        <h1>Soluciones de ingeniería diseñadas para escalar tu infraestructura</h1>
+        <p>Profundizamos en cada pilar tecnológico para ofrecerte desarrollos a la medida, arquitecturas robustas y soporte técnico de alta disponibilidad.</p>
+      </section>
+    </main>
+
+    <!-- SECCIÓN DE SERVICIOS DETALLADOS -->
+    <div class="services-container">
+      <section class="detailed-services-section">
+        
+        <!-- 1. Soporte Técnico Corporativo (IZQUIERDA) -->
+        <article class="detailed-service-card service-left">
+          <div class="service-icon-box">
+            <i data-lucide="wrench"></i>
+          </div>
+          <div class="service-content">
+            <span class="service-tag">Infraestructura & Operaciones</span>
+            <h2>Soporte Técnico Corporativo</h2>
+            <p>Garantizamos la continuidad operativa de tu empresa mediante un diagnóstico avanzado y mantenimiento proactivo de hardware, servidores y redes locales.</p>
+            <ul class="service-features">
+              <li><i data-lucide="check-circle-2"></i> Mantenimiento preventivo y correctivo de equipos.</li>
+              <li><i data-lucide="check-circle-2"></i> Configuración y monitoreo de redes y dispositivos corporativos.</li>
+              <li><i data-lucide="check-circle-2"></i> Tiempos de respuesta óptimos ante incidencias críticas.</li>
+            </ul>
+            <a href="/contacto.html" class="btn-secondary">Solicitar Soporte &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 2. Desarrollo de Software (DERECHA) -->
+        <article class="detailed-service-card service-right">
+          <div class="service-icon-box">
+            <i data-lucide="code"></i>
+          </div>
+          <div class="service-content">
+            <span class="service-tag">Ingeniería de Software</span>
+            <h2>Desarrollo de Software a Medida</h2>
+            <p>Construimos aplicaciones web empresariales robustas, sistemas escalables y APIs optimizadas para automatizar y potenciar los flujos operativos de tu negocio.</p>
+            <ul class="service-features">
+              <li><i data-lucide="check-circle-2"></i> Arquitecturas backend eficientes (Python, FastAPI, Node).</li>
+              <li><i data-lucide="check-circle-2"></i> Interfaces de usuario modernas, dinámicas y responsivas.</li>
+              <li><i data-lucide="check-circle-2"></i> Integración fluida con pasarelas de pago, APIs y servicios externos.</li>
+            </ul>
+            <a href="/contacto.html" class="btn-secondary">Iniciar Proyecto &rarr;</a>
+          </div>
+        </article>
+
+        <!-- 3. Consultoría e Integración (IZQUIERDA) -->
+        <article class="detailed-service-card service-left">
+          <div class="service-icon-box">
+            <i data-lucide="server"></i>
+          </div>
+          <div class="service-content">
+            <span class="service-tag">Arquitectura & Datos</span>
+            <h2>Consultoría e Integración IT</h2>
+            <p>Optimizamos tus bases de datos, centralizamos métricas de desempeño y diseñamos despliegues seguros en la nube o servidores locales.</p>
+            <ul class="service-features">
+              <li><i data-lucide="check-circle-2"></i> Modelado, seguridad y optimización de bases de datos (PostgreSQL, MongoDB).</li>
+              <li><i data-lucide="check-circle-2"></i> Despliegue contenerizado mediante Docker y entornos cloud.</li>
+              <li><i data-lucide="check-circle-2"></i> Consultoría estratégica en arquitectura de sistemas.</li>
+            </ul>
+            <a href="/contacto.html" class="btn-secondary">Consultar Especialista &rarr;</a>
+          </div>
+        </article>
+
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="/contacto.html">Soporte</a>
+          <a href="/servicios.html">Servicios</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script principal de servicios -->
+    <script type="module" src="/src/services.js"></script>
+  </body>
+</html>
