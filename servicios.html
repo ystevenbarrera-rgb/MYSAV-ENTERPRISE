@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/navbar.css">
+    <link rel="stylesheet" href="/src/styles/servicios.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
   </head>
   <body>
     <!-- Efecto ambiental de fondo -->
@@ -23,18 +26,18 @@
     <!-- Navbar Centralizado -->
     <navbar-component></navbar-component>
 
+    <!-- Contenedor general que unifica toda la vista -->
+    <main class="services-container">
+
     <!-- HERO SECCIÓN SERVICIOS -->
-    <main class="page-content">
-      <section class="about-hero">
+    <section class="services-header">
         <span class="badge">Nuestras Capacidades Core</span>
         <h1>Soluciones de ingeniería diseñadas para escalar tu infraestructura</h1>
         <p>Profundizamos en cada pilar tecnológico para ofrecerte desarrollos a la medida, arquitecturas robustas y soporte técnico de alta disponibilidad.</p>
       </section>
-    </main>
 
     <!-- SECCIÓN DE SERVICIOS DETALLADOS -->
-    <div class="services-container">
-      <section class="detailed-services-section">
+    <section class="detailed-services-section">
         
         <!-- 1. Soporte Técnico Corporativo (IZQUIERDA) -->
         <article class="detailed-service-card service-left">
@@ -91,18 +94,10 @@
         </article>
 
       </section>
-    </div>
+    </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
-        <div class="footer-links">
-          <a href="/contacto.html">Soporte</a>
-          <a href="/servicios.html">Servicios</a>
-        </div>
-      </div>
-    </footer>
+    <footer-component></footer-component>
 
     <!-- Script principal de servicios -->
     <script type="module" src="/src/services.js"></script>

@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 import './components/Navbar.js';
-import './style.css';
+import './styles/style.css';
+import './components/Footer.js';
 
 console.log('MYSAV Enterprise - Módulo Nosotros cargado.');

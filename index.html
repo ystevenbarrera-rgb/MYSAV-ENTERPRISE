@@ -1,95 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYSAV Enterprise | Soluciones Tecnológicas y Soporte Especializado</title>
 
-    <!-- Fuentes: Inter + Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
-    <!-- Efecto ambiental de fondo -->
-    <div class="background-blobs">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MYSAV Enterprise</title>
 
-    <!-- Barra de Navegación -->
-    <navbar-component></navbar-component>
+  <!-- Fuentes: Inter + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/navbar.css">
+  <link rel="stylesheet" href="/src/styles/index.css">
+  <link rel="stylesheet" href="/src/styles/footer.css">
+</head>
+
+<body>
+  <!-- Efecto ambiental de fondo -->
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <!-- Barra de Navegación -->
+  <navbar-component></navbar-component>
 
   <main class="container page-content">
     <!-- Contenido de la página -->
-  
-      <!-- HERO SECTION -->
-      <section class="hero-section">
-        <span class="badge">Innovación & Infraestructura</span>
-        <h1>Soluciones tecnológicas de alto rendimiento para tu empresa</h1>
-        <p>Especialistas en desarrollo de software a medida, integración de sistemas y soporte técnico corporativo integral.</p>
-        
-        <div class="hero-actions">
-          <a href="/contacto.html" class="btn-primary">Solicitar Diagnóstico</a>
-          <a href="/servicios.html" class="btn-secondary">Explorar Servicios</a>
-        </div>
-      </section>
 
-      <!-- SERVICIOS DESTACADOS -->
-      <section class="services-overview">
-        <div class="section-title">
-          <h2>Nuestros Servicios Core</h2>
-          <p>Impulsamos la eficiencia operativa de tu infraestructura informática</p>
-        </div>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <span class="badge">Innovación & Infraestructura</span>
+      <h1>Tecnología accesible para transformar y hacer crecer tu negocio</h1>
+      <p>Transformamos negocios con software a medida, automatización y soporte técnico de confianza, diseñados para tu
+        crecimiento sin complicaciones.</p>
 
-        <div class="services-grid">
-          <!-- Tarjeta 1: Soporte Técnico -->
-          <article class="card service-card">
-            <div class="service-icon">
-              <i data-lucide="wrench"></i>
-            </div>
-            <h3>Soporte Técnico Corporativo</h3>
-            <p>Mantenimiento preventivo y correctivo de hardware, servidores y dispositivos corporativos con atención oportuna.</p>
-            <a href="/contacto.html" class="service-link">Solicitar Soporte &rarr;</a>
-          </article>
-
-          <!-- Tarjeta 2: Desarrollo de Software -->
-          <article class="card service-card">
-            <div class="service-icon">
-              <i data-lucide="code"></i>
-            </div>
-            <h3>Desarrollo de Software</h3>
-            <p>Construcción de aplicaciones web empresariales, integración de APIs y arquitecturas eficientes a la medida.</p>
-            <a href="/contacto.html" class="service-link">Iniciar Proyecto &rarr;</a>
-          </article>
-
-          <!-- Tarjeta 3: Consultoría IT -->
-          <article class="card service-card">
-            <div class="service-icon">
-              <i data-lucide="server"></i>
-            </div>
-            <h3>Consultoría e Integración</h3>
-            <p>Optimización de procesos operativos, persistencia de datos y centralización de métricas de desempeño.</p>
-            <a href="/contacto.html" class="service-link">Consultar &rarr;</a>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
-        <div class="footer-links">
-          <a href="/contacto.html">Soporte</a>
-          <a href="/servicios.html">Servicios</a>
-        </div>
+      <div class="hero-actions">
+        <a href="/contacto.html" class="btn-primary">Solicitar Diagnóstico</a>
+        <a href="/servicios.html" class="btn-secondary">Explorar Servicios</a>
       </div>
-    </footer>
+    </section>
 
-    <script type="module" src="/src/home.js"></script>
-  </body>
+    <!-- Contenedor de Tarjetas -->
+    <div class="mysav-grid">
+
+      <!-- TARJETA 1: MISIÓN -->
+      <article class="mysav-card" id="card-mision">
+        <div class="mysav-card__glow" aria-hidden="true"></div>
+
+        <header class="mysav-card__header">
+          <!-- Logo personalizado-->
+          <div class="mysav-logo">
+            <img id="mision-img" alt="Misión MYSAV" class="mysav-logo__img">
+          </div>
+        </header>
+
+        <div class="mysav-card__body">
+          <p class="mysav-card__summary">
+            Brindar soluciones tecnológicas integrales mediante el desarrollo de software, la automatización de procesos
+            y los servicios de soporte técnico, facilitando el acceso a herramientas funcionales y confiables que
+            permitan a personas y empresas optimizar sus actividades, mejorar su productividad y alcanzar sus objetivos.
+          </p>
+
+          <!-- Contenido Dinámico Expandible -->
+          <div id="content-mision" class="mysav-card__content" aria-hidden="true">
+            <hr class="mysav-card__divider">
+            <h3 class="mysav-card__subtitle">Pilares de Nuestra Misión:</h3>
+            <ul class="mysav-card__list">
+              <li class="mysav-card__item">
+                <i data-lucide="code-2" aria-hidden="true"></i>
+                <span><strong>Software a Medida:</strong> Soluciones digitales funcionales adaptadas a tus metas.</span>
+              </li>
+              <li class="mysav-card__item">
+                <i data-lucide="cpu" aria-hidden="true"></i>
+                <span><strong>Automatización:</strong> Simplificamos tareas para elevar la productividad.</span>
+              </li>
+              <li class="mysav-card__item">
+                <i data-lucide="wrench" aria-hidden="true"></i>
+                <span><strong>Soporte Integral:</strong> Mantenimiento, diagnóstico y asesoría personalizada.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="mysav-card__footer">
+          <button type="button" class="mysav-card__toggle-btn" aria-expanded="false" aria-controls="content-mision">
+            <span class="mysav-card__btn-text">Ver detalles</span>
+            <i data-lucide="chevron-down" class="mysav-card__btn-icon" aria-hidden="true"></i>
+          </button>
+        </footer>
+      </article>
+
+      <!-- TARJETA 2: VISIÓN -->
+      <article class="mysav-card" id="card-vision">
+        <div class="mysav-card__glow" aria-hidden="true"></div>
+
+        <header class="mysav-card__header">
+          <div class="mysav-logo">
+            <img id="vision-img" alt="Visión MYSAV" class="mysav-logo__img">
+          </div>
+        </header>
+
+        <div class="mysav-card__body">
+          <p class="mysav-card__summary">
+            Consolidarnos como una empresa colombiana reconocida por desarrollar soluciones tecnológicas útiles,
+            confiables y accesibles, destacándonos especialmente en el desarrollo de software y la automatización para
+            pequeñas y medianas empresas. </p>
+          <br>
+          <p class="mysav-card__summary">
+            A largo plazo, buscamos ampliar nuestro portafolio de soluciones digitales, fortalecer nuestras capacidades
+            técnicas y construir relaciones duraderas con nuestros clientes, convirtiéndonos en un aliado tecnológico
+            que contribuya a su evolución y crecimiento.
+          </p>
+
+          <div id="content-vision" class="mysav-card__content" aria-hidden="true">
+            <hr class="mysav-card__divider">
+            <h4 class="mysav-card__subtitle">Metas a Futuro:</h4>
+            <ul class="mysav-card__list">
+              <li class="mysav-card__item">
+                <i data-lucide="trending-up" aria-hidden="true"></i>
+                <span><strong>Liderazgo Regional:</strong> Referente en desarrollo accesible.</span>
+              </li>
+              <li class="mysav-card__item">
+                <i data-lucide="sparkles" aria-hidden="true"></i>
+                <span><strong>Innovación Constante:</strong> Incorporación de tecnologías de vanguardia.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <footer class="mysav-card__footer">
+          <button type="button" class="mysav-card__toggle-btn" aria-expanded="false" aria-controls="content-vision">
+            <span class="mysav-card__btn-text">Ver detalles</span>
+            <i data-lucide="chevron-down" class="mysav-card__btn-icon" aria-hidden="true"></i>
+          </button>
+        </footer>
+      </article>
+
+      <!-- TARJETA 3: Propuesta de valor -->
+      <article class="mysav-card" id="card-valores">
+        <div class="mysav-card__glow" aria-hidden="true"></div>
+
+        <header class="mysav-card__header">
+          <div class="mysav-logo">
+            <img id="propuesta-img" alt="Propuesta MYSAV" class="mysav-logo__img">
+          </div>
+        </header>
+
+        <div class="mysav-card__body">
+          <p class="mysav-card__summary">
+            En MYSAV Enterprise conectamos las necesidades de nuestros clientes con soluciones tecnológicas prácticas,
+            personalizadas y acordes con sus objetivos y presupuesto
+          </p>
+          <br>
+          <p class="mysav-card__summary">
+            A diferencia de una oferta centrada únicamente en la venta de productos o servicios aislados, buscamos
+            comprender cada necesidad para recomendar una solución adecuada: desde desarrollar un software que optimice
+            un proceso empresarial hasta reparar un computador, mejorar su rendimiento o asesorar en la adquisición de
+            equipos y componentes.
+          </p>
+
+
+          <div id="content-valores" class="mysav-card__content" aria-hidden="true">
+            <hr class="mysav-card__divider">
+            <h4 class="mysav-card__subtitle">Nuestros Principios:</h4>
+            <div class="mysav-card__pills">
+              <span class="mysav-pill"><i data-lucide="check-circle-2"></i> Soluciones a la medida</span>
+              <span class="mysav-pill"><i data-lucide="star"></i> Enfoque practico</span>
+              <span class="mysav-pill"><i data-lucide="users"></i> Acompañamiento cercano</span>
+              <span class="mysav-pill"><i data-lucide="zap"></i> Alternativas accesibles</span>
+              <span class="mysav-pill"><i data-lucide="users"></i> Servicio integral</span>
+            </div>
+          </div>
+        </div>
+
+        <footer class="mysav-card__footer">
+          <button type="button" class="mysav-card__toggle-btn" aria-expanded="false" aria-controls="content-valores">
+            <span class="mysav-card__btn-text">Ver detalles</span>
+            <i data-lucide="chevron-down" class="mysav-card__btn-icon" aria-hidden="true"></i>
+          </button>
+        </footer>
+      </article>
+    </div>
+
+    <!-- SERVICIOS DESTACADOS -->
+    <section class="services-overview">
+      <div class="section-title">
+        <h2>Nuestros Servicios Core</h2>
+        <p>Impulsamos la eficiencia operativa de tu infraestructura informática</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Tarjeta 1: Soporte Técnico -->
+        <article class="card service-card">
+          <div class="service-icon">
+            <i data-lucide="wrench"></i>
+          </div>
+          <h3>Soporte Técnico Corporativo</h3>
+          <p>Mantenimiento preventivo y correctivo de hardware, servidores y dispositivos corporativos con atención
+            oportuna.</p>
+          <a href="/contacto.html" class="service-link">Solicitar Soporte &rarr;</a>
+        </article>
+
+        <!-- Tarjeta 2: Desarrollo de Software -->
+        <article class="card service-card">
+          <div class="service-icon">
+            <i data-lucide="code"></i>
+          </div>
+          <h3>Desarrollo de Software</h3>
+          <p>Construcción de aplicaciones web empresariales, integración de APIs y arquitecturas eficientes a la medida.
+          </p>
+          <a href="/contacto.html" class="service-link">Iniciar Proyecto &rarr;</a>
+        </article>
+
+        <!-- Tarjeta 3: Consultoría IT -->
+        <article class="card service-card">
+          <div class="service-icon">
+            <i data-lucide="server"></i>
+          </div>
+          <h3>Consultoría e Integración</h3>
+          <p>Optimización de procesos operativos, persistencia de datos y centralización de métricas de desempeño.</p>
+          <a href="/contacto.html" class="service-link">Consultar &rarr;</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer-component></footer-component>
+
+  <script type="module" src="/src/home.js"></script>
+</body>
+
 </html>

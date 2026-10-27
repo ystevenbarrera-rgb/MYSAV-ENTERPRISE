@@ -1,5 +1,6 @@
 import './components/Navbar.js';
-import './style.css';
+import './styles/style.css';
+import './components/Footer.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.lucide) {

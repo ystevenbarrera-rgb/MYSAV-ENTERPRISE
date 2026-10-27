@@ -1,0 +1,224 @@
+/* ==========================================
+   ESTILOS EXCLUSIVOS DE LA VISTA SERVICIOS
+   ========================================== */
+
+.services-container {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 8rem 2rem 7rem 2rem; /* Espacio superior limpio para el navbar fijo */
+  box-sizing: border-box;
+}
+
+/* Encabezado centrado (Píldora, Título y Subtítulo) */
+.services-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.services-header .badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: rgba(30, 58, 138, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.services-header h1 {
+  font-family: var(--font-primary);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.services-header p {
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.detailed-services-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* Tarjeta Base de Servicio */
+.detailed-service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 82%;
+  box-sizing: border-box;
+  gap: 3rem;
+  padding: 2.5rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Posicionamiento en Zigzag */
+.service-left {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.service-right {
+  margin-left: auto;
+  margin-right: 0;
+  flex-direction: row-reverse;
+}
+
+/* Caja del Icono */
+.service-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 100px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.service-content {
+  flex: 1;
+  text-align: left;
+}
+
+.service-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.detailed-service-card h2 {
+  font-family: var(--font-primary);
+  font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.detailed-service-card p {
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   ESTILOS RESPONSIVOS PARA MÓVILES (< 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 6rem 1rem 3rem 1rem;
+  }
+
+  .services-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .detailed-service-card {
+    max-width: 100%;
+    flex-direction: column !important;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .service-icon-box {
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .detailed-service-card h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Estilo exacto para los botones dentro de las tarjetas de servicios */
+.detailed-service-card .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(30, 58, 138, 0.15); /* Fondo azul oscuro semitransparente */
+  border: 1px solid rgba(59, 130, 246, 0.4); /* Borde sutil azulado */
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 9999px; /* Forma de píldora redondeada */
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detailed-service-card .btn-secondary:hover {
+  background-color: rgba(30, 58, 138, 0.35);
+  border-color: rgba(59, 130, 246, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+/* ==========================================
+   SEPARACIÓN EXCLUSIVA DEL FOOTER EN SERVICIOS
+   ========================================== */
+
+.footer {
+  margin-top: 6rem !important; /* Empuja el footer hacia abajo para separarlo de las tarjetas */
+}
+
+/* ==========================================
+   SEPARACIÓN DEFINITIVA POR MARGEN INFERIOR
+   ========================================== */
+/* Asegurar que el Custom Component abarque el 100% de la pantalla */
+footer-component {
+  display: block;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+/* Si el div/footer interno del Web Component utiliza la clase .footer */
+footer-component .footer,
+footer {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

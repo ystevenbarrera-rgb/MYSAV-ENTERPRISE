@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/navbar.css">
+    <link rel="stylesheet" href="/src/styles/nosotros.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
   </head>
   <body>
     <!-- Efecto ambiental de fondo -->
@@ -110,6 +113,26 @@
               </div>
             </div>
           </article>
+        
+      
+
+      <!-- Integrante 5 -->
+          <article class="card team-card">
+            <div class="team-avatar">
+              <span class="avatar-placeholder">JA</span>
+            </div>
+            <div class="team-info">
+              <h3>Jose Antonio Villaveces Rivera</h3>
+              <span class="team-role">Arquitecto backend y líder de sistemas</span>
+              <p>Especialista en desarrollo de APIs, arquitectura de persistencia de datos, optimización de métricas e integración de sistemas cloud.</p>
+              <div class="skills-tags">
+                <span class="tag">Python / FastAPI</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Java / Springboot</span>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -149,15 +172,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <p>&copy; 2026 MYSAV Enterprise. Todos los derechos reservados.</p>
-        <div class="footer-links">
-          <a href="/contacto.html">Soporte</a>
-          <a href="/servicios.html">Servicios</a>
-        </div>
-      </div>
-    </footer>
+    <footer-component></footer-component>
 
     <script type="module" src="/src/about.js"></script>
   </body>

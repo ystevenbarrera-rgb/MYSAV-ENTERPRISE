@@ -1,0 +1,234 @@
+/* ==========================================
+   ESTILOS EXCLUSIVOS DE LA VISTA NOSOTROS
+   ========================================== */
+
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 3.5rem auto;
+  padding: 0 1.5rem;
+}
+
+
+
+.about-hero h1 {
+  font-family: var(--font-primary);
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--color-white);
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+
+.team-section {
+  margin-bottom: 5rem;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mantiene estrictamente 2 columnas */
+  column-gap: 1.75rem; /* Espacio horizontal entre tarjetas */
+  row-gap: 1.75rem;    /* Espacio vertical exacto entre filas */
+  margin-top: 2rem;
+}
+
+/* Tarjetas del Equipo con estilo Glassmorphism */
+.team-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+  box-sizing: border-box;
+  width: 100%;
+  grid-column: auto !important; /* Fuerza a que cada tarjeta ocupe una sola celda y no se estire */
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.team-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), #3b82f6);
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-info h3 {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 0.2rem;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 0.75rem;
+}
+
+.team-info p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skills-tags .tag {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Sección de Valores / Pilares Corporativos en Cajas */
+.values-section {
+  padding: 2rem 0 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.value-item {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  color: #3b82f6;
+}
+
+.value-icon i {
+  width: 26px;
+  height: 26px;
+}
+
+.value-item h4 {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+.value-item p {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* ==========================================
+   ESTILOS RESPONSIVOS MÓVILES (< 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: rgba(30, 58, 138, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--color-secondary, #3b82f6);
+  font-family: var(--font-primary, sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
