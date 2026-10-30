@@ -20,7 +20,7 @@
 .services-header .badge {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: rgba(30, 58, 138, 0.2);
+  background-color: var(--color-primary);
   border: 1px solid rgba(59, 130, 246, 0.3);
   color: var(--color-secondary);
   font-family: var(--font-primary);
@@ -36,14 +36,14 @@
   font-family: var(--font-primary);
   font-size: 2.6rem;
   font-weight: 800;
-  color: var(--color-white);
+  color: var(--color-primary);
   line-height: 1.2;
   letter-spacing: -0.03em;
   margin-bottom: 1rem;
 }
 
 .services-header p {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 1.1rem;
   line-height: 1.6;
   opacity: 0.9;
@@ -66,8 +66,8 @@
   box-sizing: border-box;
   gap: 3rem;
   padding: 2.5rem;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--color-bg);
+  border: var(--font-primary);
   border-radius: 1rem;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -96,6 +96,7 @@
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 1rem;
   flex-shrink: 0;
+  color: #3b82f6;
 }
 
 .service-content {

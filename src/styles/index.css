@@ -2,12 +2,38 @@
    ESTILOS EXCLUSIVOS DE LA VISTA INICIO (INDEX)
    ========================================== */
 
-/* Hero Section */
+/* Hero Section de Ancho Completo Limpio (Full-Bleed Grid) */
 .hero-section {
+  position: relative;
+  width: 100%;                  /* Ocupa todo el ancho disponible */
+  margin: 0;                    /* Sin márgenes laterales extraños */
+  margin-top: 0 !important;     /* Cero espacio con el navbar */
+  padding: 6rem 2rem;           
   text-align: center;
-  padding: 3rem 1rem 4rem;
-  max-width: 800px;
-  margin: 0 auto;
+  box-sizing: border-box;
+
+  /* Imagen de fondo */
+  background-image: linear-gradient(
+      to bottom, 
+      rgba(15, 23, 42, 0.75), 
+      rgba(15, 23, 42, 0.95)
+    ), 
+    url('../assets/mundo_fake.jpg');
+  
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centrar textos e elementos internos */
+.hero-section > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-section h1 {
@@ -27,6 +53,7 @@
   line-height: 1.6;
   margin-bottom: 2rem;
 }
+
 
 .hero-actions {
   display: flex;
@@ -100,11 +127,11 @@
   font-family: var(--font-primary);
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .section-title p {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   opacity: 0.8;
   font-size: 0.95rem;
   margin-top: 0.5rem;
@@ -119,6 +146,7 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   box-sizing: border-box;
+  
 }
 
 .service-card {
@@ -127,7 +155,7 @@
   height: 100%;
   align-items: flex-start;
   padding: 2.5rem 2rem;
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--color-bg);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
   backdrop-filter: blur(12px);
@@ -158,9 +186,11 @@
   width: 28px;
   height: 28px;
 }
+
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  border-color: var(--color-primary);
 }
 
 .service-card h3 {
@@ -217,7 +247,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  align-items: stretch; /* Hace que las 3 tarjetas hereden exactamente la misma altura */
+  align-items: start; /* Permite que las tarjetas se estiren juntas en altura */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 4rem auto;
@@ -229,9 +259,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Separa cabecera/cuerpo del footer */
-  height: 100%; /* Forzar que midan lo mismo en el grid */
-  background: rgba(15, 23, 42, 0.6);
+  justify-content: flex-start; /* Compactas por defecto cuando están cerradas */
+  background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
   padding: 2.5rem 2rem;
@@ -338,12 +367,38 @@
 .mysav-card__content {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  margin-top: 0;
+  max-height: 0;
 }
 
-.mysav-card__content > * {
+.mysav-card__content>* {
   overflow: hidden;
   margin-top: auto;
+}
+
+.mysav-card.mysav-card--expanded .mysav-card__content {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 1rem;
+  max-height: 800px;
+}
+
+/* Rotación suave del icono de la flecha */
+.mysav-card__toggle-btn i,
+.mysav-card__toggle-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.mysav-card.mysav-card--expanded .mysav-card__toggle-btn i,
+.mysav-card.mysav-card--expanded .mysav-card__toggle-btn svg {
+  transform: rotate(180deg);
 }
 
 .mysav-card--expanded .mysav-card__content {
@@ -465,7 +520,8 @@
 }
 
 .mysav-logo__img {
-  height: 50px; /* Puedes subir o bajar este valor para controlar el tamaño visual */
+  height: 50px;
+  /* Puedes subir o bajar este valor para controlar el tamaño visual */
   width: auto;
   object-fit: contain;
   display: block;
@@ -474,6 +530,15 @@
 .mysav-card__body {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Permite que el contenido tome el espacio sobrante */
-  justify-content: flex-start; /* Mantiene el texto alineado arriba, evitando huecos extraños */
+  flex-grow: 1;
+  /* Permite que el contenido tome el espacio sobrante */
+}
+
+.mysav-card.mysav-card--expanded {
+  justify-content: space-between;
+  /* Distribuye el espacio cuando están abiertas */
+}
+
+.mysav-card.mysav-card--expanded .mysav-card__body {
+  flex-grow: 1;
 }
