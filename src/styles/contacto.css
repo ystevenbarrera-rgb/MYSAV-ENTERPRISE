@@ -23,9 +23,9 @@
 .contact-header .badge {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: rgba(30, 58, 138, 0.2);
+  background-color: var(--color-primary);
   border: 1px solid rgba(59, 130, 246, 0.3);
-  color: #3b82f6;
+  color: var(--color-secondary);
   font-family: var(--font-primary);
   font-size: 0.8rem;
   font-weight: 700;
@@ -39,21 +39,21 @@
   font-family: var(--font-primary);
   font-size: 2.6rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--color-primary);
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
 }
 
 .contact-header p {
-  color: #94a3b8;
+  color: var(--color-primary);
   font-size: 1.05rem;
   line-height: 1.6;
 }
 
 /* Tarjeta contenedora con Glassmorphism */
 .contact-card {
-  background: rgba(15, 23, 42, 0.6);
+  background: var(--color-bg);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.25rem;
   padding: 2.5rem;
@@ -99,7 +99,7 @@ select,
 textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  background-color: rgba(15, 23, 42, 0.7);
+  background-color: var(--color-bg);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 0.6rem;
   color: #ffffff;

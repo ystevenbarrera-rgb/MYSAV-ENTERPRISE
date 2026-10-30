@@ -40,47 +40,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-bg, #111827);
-  color: var(--color-white, #ffffff);
+  background-color:var(--color-white, #ffffff);;
+  color: var(--color-bg, #111827);
   font-family: var(--font-secondary, 'Plus Jakarta Sans', sans-serif);
   width: 100%;
-}
-
-/* ==========================================
-   EFECTOS DE FONDO AMBIENTAL
-   ========================================== */
-.background-blobs {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.25;
-}
-
-.blob-1 {
-  width: 400px;
-  height: 400px;
-  background-color: var(--color-primary);
-  top: -100px;
-  left: -100px;
-}
-
-.blob-2 {
-  width: 350px;
-  height: 350px;
-  background-color: var(--color-primary);
-  bottom: -50px;
-  right: -50px;
+  overflow-x: hidden; /* Evita que la página se corra hacia los lados */
 }
 
 /* ==========================================
@@ -124,4 +88,3 @@ body {
   width: 30px;
   height: 30px;
 }
-

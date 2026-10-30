@@ -1,3 +1,5 @@
+import '../styles/footer.css';
+
 // src/components/Footer.js
 class FooterComponent extends HTMLElement {
   connectedCallback() {

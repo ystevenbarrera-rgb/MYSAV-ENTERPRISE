@@ -1,5 +1,6 @@
 // 1. Importamos la imagen directamente para que Vite procese la ruta correctamente
 import logoImg from '../assets/logoblanco.png';
+import '../styles/navbar.css';
 
 class NavbarComponent extends HTMLElement {
   connectedCallback() {
